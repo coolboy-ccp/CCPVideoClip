@@ -7,14 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00829C9421D4A5BB008C65CD /* Thum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00829C9321D4A5BB008C65CD /* Thum.swift */; };
+		00829C9621D4A608008C65CD /* Ruler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00829C9521D4A608008C65CD /* Ruler.swift */; };
+		00829C9821D4B04A008C65CD /* TrimmerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00829C9721D4B04A008C65CD /* TrimmerView.swift */; };
 		008368F521D35302005B6124 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008368F421D35302005B6124 /* AppDelegate.swift */; };
 		008368F721D35302005B6124 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008368F621D35302005B6124 /* ViewController.swift */; };
 		008368FA21D35302005B6124 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 008368F821D35302005B6124 /* Main.storyboard */; };
 		008368FC21D35304005B6124 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 008368FB21D35304005B6124 /* Assets.xcassets */; };
 		008368FF21D35304005B6124 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 008368FD21D35304005B6124 /* LaunchScreen.storyboard */; };
+		0083690821D35328005B6124 /* VideoClip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0083690721D35328005B6124 /* VideoClip.swift */; };
+		0083690B21D36A92005B6124 /* VideoClipVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0083690921D36A92005B6124 /* VideoClipVC.swift */; };
+		0083690C21D36A92005B6124 /* VideoClipVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0083690A21D36A92005B6124 /* VideoClipVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00829C9321D4A5BB008C65CD /* Thum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thum.swift; sourceTree = "<group>"; };
+		00829C9521D4A608008C65CD /* Ruler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ruler.swift; sourceTree = "<group>"; };
+		00829C9721D4B04A008C65CD /* TrimmerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrimmerView.swift; sourceTree = "<group>"; };
 		008368F121D35302005B6124 /* CCPVideoClip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CCPVideoClip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		008368F421D35302005B6124 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		008368F621D35302005B6124 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +31,9 @@
 		008368FB21D35304005B6124 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		008368FE21D35304005B6124 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0083690021D35304005B6124 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0083690721D35328005B6124 /* VideoClip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoClip.swift; sourceTree = "<group>"; };
+		0083690921D36A92005B6124 /* VideoClipVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoClipVC.swift; sourceTree = "<group>"; };
+		0083690A21D36A92005B6124 /* VideoClipVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoClipVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,9 +47,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00829C9221D4A5A2008C65CD /* Trimmer */ = {
+			isa = PBXGroup;
+			children = (
+				00829C9321D4A5BB008C65CD /* Thum.swift */,
+				00829C9521D4A608008C65CD /* Ruler.swift */,
+				00829C9721D4B04A008C65CD /* TrimmerView.swift */,
+			);
+			path = Trimmer;
+			sourceTree = "<group>";
+		};
 		008368E821D35302005B6124 = {
 			isa = PBXGroup;
 			children = (
+				0083690621D35312005B6124 /* VideoClip */,
 				008368F321D35302005B6124 /* CCPVideoClip */,
 				008368F221D35302005B6124 /* Products */,
 			);
@@ -62,6 +85,17 @@
 				0083690021D35304005B6124 /* Info.plist */,
 			);
 			path = CCPVideoClip;
+			sourceTree = "<group>";
+		};
+		0083690621D35312005B6124 /* VideoClip */ = {
+			isa = PBXGroup;
+			children = (
+				00829C9221D4A5A2008C65CD /* Trimmer */,
+				0083690721D35328005B6124 /* VideoClip.swift */,
+				0083690921D36A92005B6124 /* VideoClipVC.swift */,
+				0083690A21D36A92005B6124 /* VideoClipVC.xib */,
+			);
+			path = VideoClip;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,6 +156,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0083690C21D36A92005B6124 /* VideoClipVC.xib in Resources */,
 				008368FF21D35304005B6124 /* LaunchScreen.storyboard in Resources */,
 				008368FC21D35304005B6124 /* Assets.xcassets in Resources */,
 				008368FA21D35302005B6124 /* Main.storyboard in Resources */,
@@ -135,7 +170,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00829C9621D4A608008C65CD /* Ruler.swift in Sources */,
+				0083690B21D36A92005B6124 /* VideoClipVC.swift in Sources */,
 				008368F721D35302005B6124 /* ViewController.swift in Sources */,
+				0083690821D35328005B6124 /* VideoClip.swift in Sources */,
+				00829C9821D4B04A008C65CD /* TrimmerView.swift in Sources */,
+				00829C9421D4A5BB008C65CD /* Thum.swift in Sources */,
 				008368F521D35302005B6124 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
